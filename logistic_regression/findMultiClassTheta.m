@@ -13,7 +13,6 @@ function [all_theta, labels] = findMultiClassTheta(X, y, lambda = 0, mode = 0)
 		y_tmp = (y == label);
 		all_theta(:, item) = findLogisticTheta(X, y_tmp, lambda, mode);
 		fprintf('label:%f found!\n', label);
-		fprintf('press any key to continue...\n'); pause;
 	end
 
 end
